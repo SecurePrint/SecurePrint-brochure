@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///Users/basantsaini/Downloads/secureprint-brochure.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SecurePrint — Institutional Proposal</title>
+  <link href="./SecurePrint — Institutional Proposal_files/css2" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0a0a0f;
+      --ink-mid: #3a3a4a;
+      --ink-muted: #72728a;
+      --accent: #1a1a6e;
+      --accent-light: #e8e8f8;
+      --gold: #c8a84b;
+      --gold-light: #fdf6e3;
+      --surface: #f7f7fb;
+      --white: #ffffff;
+      --border: rgba(10,10,50,0.10);
+      --page: 820px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f0f0f8;
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .page {
+      max-width: var(--page);
+      margin: 0 auto;
+      background: var(--white);
+      box-shadow: 0 4px 40px rgba(0,0,0,0.10);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--accent);
+      color: white;
+      padding: 72px 64px 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 340px; height: 340px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -120px; left: 40px;
+      width: 480px; height: 480px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.1;
+      color: white;
+      max-width: 560px;
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: #b8b8f0;
+    }
+    .hero-sub {
+      font-size: 16px;
+      color: rgba(255,255,255,0.7);
+      max-width: 460px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+      font-weight: 300;
+    }
+    .hero-meta {
+      display: flex;
+      gap: 40px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 28px;
+      margin-top: 8px;
+    }
+    .hero-meta-item label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 4px;
+    }
+    .hero-meta-item span {
+      font-size: 14px;
+      font-weight: 500;
+      color: white;
+    }
+    .hero-badge {
+      position: absolute;
+      top: 64px; right: 64px;
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      border: 1px solid rgba(200,168,75,0.4);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      z-index: 2;
+    }
+    .hero-badge span {
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      line-height: 1.4;
+    }
+
+    /* ── SECTIONS ── */
+    .section { padding: 60px 64px; }
+    .section + .section { border-top: 1px solid var(--border); }
+    .section-alt { background: var(--surface); }
+    .section-dark { background: var(--accent); color: white; }
+    .section-gold { background: var(--gold-light); }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .eyebrow-dark { color: rgba(255,255,255,0.45); }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    h2.light { color: white; }
+
+    .lead {
+      font-size: 16px;
+      color: var(--ink-mid);
+      max-width: 580px;
+      line-height: 1.75;
+      margin-bottom: 36px;
+      font-weight: 300;
+    }
+    .lead.light { color: rgba(255,255,255,0.72); }
+
+    /* ── STORY ── */
+    .story-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    .story-left {
+      padding: 56px 48px 56px 0;
+      border-right: 1px solid var(--border);
+    }
+    .story-right { padding: 56px 0 56px 48px; }
+    .story-stat {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .story-stat-label {
+      font-size: 13px;
+      color: var(--ink-muted);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+    .story-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    /* ── PROBLEM STRIP ── */
+    .problem-strip {
+      background: #f7f0e8;
+      border-left: 3px solid var(--gold);
+      padding: 24px 28px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 32px;
+    }
+    .problem-strip p {
+      font-size: 15px;
+      color: var(--ink-mid);
+      line-height: 1.7;
+    }
+    .problem-strip strong { color: var(--ink); }
+
+    /* ── OFFERINGS GRID ── */
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 8px;
+    }
+    .offering-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .offering-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+    .offering-card.accent-blue::before { background: var(--accent); }
+    .offering-card.accent-gold::before { background: var(--gold); }
+    .offering-card.accent-teal::before { background: #1a7a6e; }
+    .offering-card.accent-coral::before { background: #c0392b; }
+    .offering-card.full-width { grid-column: 1 / -1; }
+    .offering-number {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 12px;
+    }
+    .offering-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .offering-desc {
+      font-size: 14px;
+      color: var(--ink-mid);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .offering-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+    .tag-gold { background: var(--gold-light); color: #8b6914; }
+    .tag-teal { background: #e0f5f2; color: #0f6e56; }
+
+    /* ── HOW IT WORKS ── */
+    .steps {
+      counter-reset: step;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 8px;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .step:last-child { border-bottom: none; }
+    .step-num {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.15);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: white;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 4px;
+    }
+    .step-desc {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.65;
+    }
+
+    /* ── PAYMENT MODES ── */
+    .payment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .payment-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      background: var(--white);
+    }
+    .payment-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--ink-muted);
+      margin-bottom: 8px;
+    }
+    .payment-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .payment-desc {
+      font-size: 13px;
+      color: var(--ink-mid);
+      line-height: 1.65;
+    }
+
+    /* ── INSTITUTE PAY ── */
+    .institute-pay {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-top: 32px;
+    }
+    .institute-pay-header {
+      background: linear-gradient(135deg, #1a1a6e 0%, #2d2d9e 100%);
+      padding: 24px 28px;
+    }
+    .institute-pay-header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 4px;
+    }
+    .institute-pay-header p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+    }
+    .institute-pay-body {
+      padding: 28px;
+    }
+    .ip-flow {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 24px;
+    }
+    .ip-step {
+      flex: 1;
+      text-align: center;
+      padding: 0 8px;
+    }
+    .ip-step-icon {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 8px;
+      font-size: 18px;
+    }
+    .ip-step-label {
+      font-size: 12px;
+      color: var(--ink-mid);
+      line-height: 1.4;
+    }
+    .ip-arrow {
+      color: var(--ink-muted);
+      font-size: 18px;
+      flex-shrink: 0;
+      padding-bottom: 24px;
+    }
+    .ip-note {
+      font-size: 13px;
+      color: var(--ink-mid);
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 14px 16px;
+      line-height: 1.6;
+    }
+
+    /* ── DEPLOYMENT TABLE ── */
+    .deploy-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 13.5px;
+    }
+    .deploy-table thead tr {
+      background: var(--accent);
+      color: white;
+    }
+    .deploy-table thead th {
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .deploy-table thead th:first-child { border-radius: 8px 0 0 0; }
+    .deploy-table thead th:last-child { border-radius: 0 8px 0 0; }
+    .deploy-table tbody tr { border-bottom: 1px solid var(--border); }
+    .deploy-table tbody tr:last-child { border-bottom: none; }
+    .deploy-table tbody td {
+      padding: 13px 16px;
+      vertical-align: top;
+      color: var(--ink-mid);
+    }
+    .deploy-table tbody td:first-child { font-weight: 600; color: var(--ink); }
+    .check { color: #1a7a6e; font-weight: 700; }
+    .cross { color: #c0392b; }
+
+    /* ── TESTIMONIAL / QUOTE ── */
+    .quote-block {
+      border-left: 3px solid var(--gold);
+      padding: 20px 28px;
+      margin: 0;
+    }
+    .quote-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 400;
+      font-style: italic;
+      color: white;
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+    .quote-attr {
+      font-size: 12px;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* ── BENEFITS ── */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      margin-top: 8px;
+    }
+    .benefit {
+      text-align: center;
+      padding: 28px 20px;
+    }
+    .benefit-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      background: var(--accent-light);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 22px;
+    }
+    .benefit-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .benefit-desc {
+      font-size: 13px;
+      color: var(--ink-muted);
+      line-height: 1.65;
+    }
+
+    /* ── WHAT WE PROVIDE ── */
+    .provide-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 8px;
+    }
+    .provide-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 16px;
+      background: var(--white);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+    .provide-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+    .provide-text strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+    .provide-text span {
+      font-size: 13px;
+      color: var(--ink-muted);
+      line-height: 1.55;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--ink);
+      color: white;
+      padding: 60px 64px;
+      text-align: center;
+    }
+    .cta-section h2 { color: white; }
+    .cta-section .lead { color: rgba(255,255,255,0.6); margin: 0 auto 36px; }
+    .cta-contact {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 4px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 10px;
+      padding: 20px 36px;
+    }
+    .cta-contact label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+    .cta-contact a {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    /* ── FOOTER ── */
+    .brochure-footer {
+      background: var(--accent);
+      padding: 20px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brochure-footer span {
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.06em;
+    }
+    .brochure-footer strong {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      font-weight: 500;
+    }
+
+    /* ── DIVIDER ── */
+    .gold-rule {
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      margin: 0 64px;
+    }
+
+    @media print {
+      body { background: white; }
+      .page { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">
+      <span>Institutional<br>Grade<br>Platform</span>
+    </div>
+    <p class="hero-eyebrow">Confidential Institutional Proposal</p>
+    <h1>The Future of <em>Campus Printing</em> is Autonomous.</h1>
+    <p class="hero-sub">SecurePrint transforms your institution's printers into intelligent, always-on print stations — with zero operational overhead and seamless integration into your existing infrastructure.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <label>Prepared for</label>
+        <span>Partner Institutions</span>
+      </div>
+      <div class="hero-meta-item">
+        <label>Platform</label>
+        <span>printeriitb.shop</span>
+      </div>
+      <div class="hero-meta-item">
+        <label>Date</label>
+        <span>June 2026</span>
+      </div>
+      <div class="hero-meta-item">
+        <label>Jurisdiction</label>
+        <span>India</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE PROBLEM -->
+  <div class="section">
+    <p class="eyebrow">The Challenge</p>
+    <h2>Institutions lose thousands of hours<br>managing print queues manually.</h2>
+    <p class="lead">Every college campus has the same problem. Students need prints at 11pm before exams. Staff spend time managing queues. Hardware sits idle for 16 hours a day. Payments are cash-only and untracked.</p>
+
+    <div class="problem-strip">
+      <p><strong>The status quo:</strong> A student needs a printout at 9pm. The print shop is closed. They scramble, stress, and eventually find a workaround — or don't. Your institution's hardware investment sits powered off overnight, generating zero value.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px; margin-top:8px;">
+      <div>
+        <div class="story-stat">73%</div>
+        <div class="story-stat-label">of student printing needs arise outside 9am–6pm windows</div>
+      </div>
+      <div>
+        <div class="story-stat">₹0</div>
+        <div class="story-stat-label">revenue generated from idle hardware overnight</div>
+      </div>
+      <div>
+        <div class="story-stat">100%</div>
+        <div class="story-stat-label">of cash print shops have zero digital audit trail</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gold-rule"></div>
+
+  <!-- WHAT WE OFFER -->
+  <div class="section">
+    <p class="eyebrow">Our Offering</p>
+    <h2>Three Ways We Partner<br>with Your Institution</h2>
+    <p class="lead">SecurePrint is not a product — it is a partnership. We adapt to your institution's existing infrastructure, budget, and requirements.</p>
+
+    <div class="offerings-grid">
+
+      <div class="offering-card accent-blue">
+        <p class="offering-number">Model 01</p>
+        <p class="offering-title">Software-Only Deployment</p>
+        <p class="offering-desc">You already own the hardware. We bring the platform. SecurePrint's software stack transforms your existing printers into automated, online-payment-enabled, 24×7 print stations — with zero capital expenditure from you.</p>
+        <div class="offering-tags">
+          <span class="tag">Your hardware</span>
+          <span class="tag">Our platform</span>
+          <span class="tag">Zero capex</span>
+          <span class="tag">24×7 automation</span>
+        </div>
+      </div>
+
+      <div class="offering-card accent-gold">
+        <p class="offering-number">Model 02</p>
+        <p class="offering-title">Hardware + Software Bundle</p>
+        <p class="offering-desc">No printers? No problem. SecurePrint supplies enterprise-grade printer hardware to your campus under a formal Hardware Supply Agreement. We own, manage, and maintain the hardware — you simply host the location.</p>
+        <div class="offering-tags">
+          <span class="tag-gold">SecurePrint hardware</span>
+          <span class="tag-gold">Managed service</span>
+          <span class="tag-gold">No maintenance burden</span>
+        </div>
+      </div>
+
+      <div class="offering-card accent-teal full-width">
+        <p class="offering-number">Model 03 — Premium</p>
+        <p class="offering-title">Institute Pay + Consolidated Invoicing</p>
+        <p class="offering-desc">For institutions that want to subsidise or facilitate printing for their members — students, faculty, staff — SecurePrint offers a fully integrated institutional billing system. Members authenticate with their Roll Number or Employee ID and an OTP sent to their registered institutional email. Print costs are charged to the institution's account and settled via a consolidated monthly invoice from SecurePrint. No cash. No individual UPI transactions. No manual reconciliation.</p>
+        <div class="offering-tags">
+          <span class="tag-teal">Roll No / ID authentication</span>
+          <span class="tag-teal">OTP-verified charges</span>
+          <span class="tag-teal">Monthly invoice</span>
+          <span class="tag-teal">GST-compliant billing</span>
+          <span class="tag-teal">Audit trail included</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="section section-dark">
+    <p class="eyebrow eyebrow-dark">The Process</p>
+    <h2 class="light">How SecurePrint Works<br>from Day One</h2>
+    <p class="lead light">From a student's perspective, using SecurePrint takes under two minutes. From your institution's perspective, it requires zero daily intervention.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num" style="background:rgba(255,255,255,0.1);">1</div>
+        <div>
+          <p class="step-title">Upload &amp; Configure</p>
+          <p class="step-desc">The user visits printeriitb.shop, uploads their PDF document, selects the printer location on your campus, and configures settings — page count, copies, colour mode, duplex — from any device, anywhere.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background:rgba(255,255,255,0.1);">2</div>
+        <div>
+          <p class="step-title">Review &amp; Pay</p>
+          <p class="step-desc">The platform calculates the total based on the location's pricing. The user pays via Razorpay (UPI, card, netbanking) or, at Institute Pay-enabled printers, authenticates with their institutional ID and OTP.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background:rgba(255,255,255,0.1);">3</div>
+        <div>
+          <p class="step-title">Automated Print Dispatch</p>
+          <p class="step-desc">Upon payment confirmation, the print job is dispatched automatically to the selected printer. No human intervention. No queue management. The printer executes the job and the document is ready for collection.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background:rgba(255,255,255,0.1);">4</div>
+        <div>
+          <p class="step-title">Collect &amp; Done</p>
+          <p class="step-desc">The user collects their printout from the printer location. For Institute Pay users, the transaction is logged against their ID and included in the institution's next monthly invoice — no further action required from the user or institution.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTITUTE PAY DETAIL -->
+  <div class="section section-gold">
+    <p class="eyebrow">Featured Capability</p>
+    <h2>Institute Pay — Printing<br>Charged to the Institution</h2>
+    <p class="lead">The most powerful feature in our institutional offering. Enable your members to print and charge it directly to the institution — with full identity verification and a monthly consolidated bill to you.</p>
+
+    <div class="institute-pay">
+      <div class="institute-pay-header">
+        <h3>How Institute Pay Works</h3>
+        <p>A frictionless, secure, OTP-verified institutional payment flow</p>
+      </div>
+      <div class="institute-pay-body">
+        <div class="ip-flow">
+          <div class="ip-step">
+            <div class="ip-step-icon">🆔</div>
+            <div class="ip-step-label">User enters Roll No / Employee ID</div>
+          </div>
+          <div class="ip-arrow">›</div>
+          <div class="ip-step">
+            <div class="ip-step-icon">📧</div>
+            <div class="ip-step-label">OTP sent to institutional email</div>
+          </div>
+          <div class="ip-arrow">›</div>
+          <div class="ip-step">
+            <div class="ip-step-icon">✅</div>
+            <div class="ip-step-label">OTP verified, charge authorised</div>
+          </div>
+          <div class="ip-arrow">›</div>
+          <div class="ip-step">
+            <div class="ip-step-icon">🖨️</div>
+            <div class="ip-step-label">Print job executed automatically</div>
+          </div>
+          <div class="ip-arrow">›</div>
+          <div class="ip-step">
+            <div class="ip-step-icon">📋</div>
+            <div class="ip-step-label">Logged to monthly invoice</div>
+          </div>
+        </div>
+        <div class="ip-note">
+          <strong>What goes on the invoice:</strong> Each line item includes the date, printer location, page count, settings (B&amp;W/colour/duplex), and amount. Document content is never shared. The institution receives a GST-compliant consolidated invoice from SecurePrint, ready for internal reconciliation against department or student accounts.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEPLOYMENT TABLE -->
+  <div class="section">
+    <p class="eyebrow">At a Glance</p>
+    <h2>Feature Comparison Across<br>Deployment Models</h2>
+
+    <table class="deploy-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Software-Only</th>
+          <th>Hardware + Software</th>
+          <th>Institute Pay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>24×7 automated printing</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>Online payment (Razorpay)</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>Institutional ID authentication</td>
+          <td class="cross">—</td>
+          <td class="cross">—</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>OTP-verified charge-to-account</td>
+          <td class="cross">—</td>
+          <td class="cross">—</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>Consolidated monthly invoice</td>
+          <td class="cross">—</td>
+          <td class="cross">—</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>GST-compliant billing</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>Hardware supplied by SecurePrint</td>
+          <td class="cross">—</td>
+          <td class="check">✓</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>Hardware maintenance managed</td>
+          <td>Institution</td>
+          <td class="check">SecurePrint</td>
+          <td>As per model</td>
+        </tr>
+        <tr>
+          <td>Per-printer pricing control</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>Select printers enabled per feature</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:16px; padding:14px 16px; background:var(--surface); border-radius:8px; font-size:13px; color:var(--ink-muted);">
+      <strong style="color:var(--ink);">Partial enablement is fully supported.</strong> An institution may have 10 printers on campus and choose to enable Institute Pay on only 5 of them. The remaining 5 operate as standard Razorpay-only stations. Feature activation is configured per printer, not per institution.
+    </div>
+  </div>
+
+  <div class="gold-rule"></div>
+
+  <!-- WHAT WE PROVIDE -->
+  <div class="section section-alt">
+    <p class="eyebrow">The Package</p>
+    <h2>Everything We Provide<br>to Your Institution</h2>
+
+    <div class="provide-list">
+      <div class="provide-item">
+        <div class="provide-dot"></div>
+        <div class="provide-text">
+          <strong>Platform Software &amp; Licence</strong>
+          <span>Full access to the SecurePrint web platform, print dispatch engine, and all updates.</span>
+        </div>
+      </div>
+      <div class="provide-item">
+        <div class="provide-dot"></div>
+        <div class="provide-text">
+          <strong>Printer Hardware (if applicable)</strong>
+          <span>Enterprise-grade printers supplied, installed, and maintained by SecurePrint under an HSA.</span>
+        </div>
+      </div>
+      <div class="provide-item">
+        <div class="provide-dot"></div>
+        <div class="provide-text">
+          <strong>Institute Pay Integration</strong>
+          <span>OTP email flow configured against your institution's member ID and email database.</span>
+        </div>
+      </div>
+      <div class="provide-item">
+        <div class="provide-dot"></div>
+        <div class="provide-text">
+          <strong>GST-Compliant Monthly Invoices</strong>
+          <span>Itemised invoices issued to your institution's finance team each billing period.</span>
+        </div>
+      </div>
+      <div class="provide-item">
+        <div class="provide-dot"></div>
+        <div class="provide-text">
+          <strong>Per-Printer Pricing Control</strong>
+          <span>Each printer location on your campus can be configured with independent pricing.</span>
+        </div>
+      </div>
+      <div class="provide-item">
+        <div class="provide-dot"></div>
+        <div class="provide-text">
+          <strong>Audit Trail &amp; Usage Reports</strong>
+          <span>Full transaction logs available for institutional reconciliation and compliance.</span>
+        </div>
+      </div>
+      <div class="provide-item">
+        <div class="provide-dot"></div>
+        <div class="provide-text">
+          <strong>Onboarding &amp; Technical Support</strong>
+          <span>Dedicated onboarding assistance and ongoing technical support for your deployment.</span>
+        </div>
+      </div>
+      <div class="provide-item">
+        <div class="provide-dot"></div>
+        <div class="provide-text">
+          <strong>Secure Payment Processing</strong>
+          <span>Razorpay-powered payments with PCI-DSS compliance. No financial data stored on our servers.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY SECUREPRINT -->
+  <div class="section section-dark">
+    <p class="eyebrow eyebrow-dark">Why SecurePrint</p>
+    <h2 class="light">Built for India's Institutions.<br>Trusted at IIT Bombay.</h2>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:8px;">
+      <div>
+        <div class="quote-block">
+          <p class="quote-text">"The campus never sleeps. Neither should the print station."</p>
+          <p class="quote-attr">— SecurePrint founding principle, IIT Bombay deployment</p>
+        </div>
+        <div style="margin-top:28px;">
+          <p style="font-size:14px; color:rgba(255,255,255,0.65); line-height:1.75;">SecurePrint was built and battle-tested at one of India's most demanding campuses — IIT Bombay. The same platform that powers our flagship deployment is what we bring to your institution. No pilot version. No watered-down offering. The real thing.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div style="padding:20px; background:rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.08);">
+          <p style="font-size:13px; font-weight:600; color:white; margin-bottom:4px;">Intermediary Compliance</p>
+          <p style="font-size:13px; color:rgba(255,255,255,0.55); line-height:1.6;">Fully compliant with IT (Intermediary Guidelines) Rules 2021. We are a technology platform, not a content owner — your institution carries no liability for user content.</p>
+        </div>
+        <div style="padding:20px; background:rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.08);">
+          <p style="font-size:13px; font-weight:600; color:white; margin-bottom:4px;">Data Privacy</p>
+          <p style="font-size:13px; color:rgba(255,255,255,0.55); line-height:1.6;">Uploaded documents are automatically deleted after printing. Invoice data contains only metadata — document content is never shared with your institution or any third party.</p>
+        </div>
+        <div style="padding:20px; background:rgba(255,255,255,0.05); border-radius:10px; border:1px solid rgba(255,255,255,0.08);">
+          <p style="font-size:13px; font-weight:600; color:white; margin-bottom:4px;">Governing Law</p>
+          <p style="font-size:13px; color:rgba(255,255,255,0.55); line-height:1.6;">All agreements are governed by Indian law. Partnership contracts are subject to jurisdiction of Jaipur, Rajasthan, India — a stable, well-resourced legal forum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="section">
+    <p class="eyebrow">For Your Institution</p>
+    <h2>What Changes When You<br>Partner with SecurePrint</h2>
+
+    <div class="benefits-grid">
+      <div class="benefit">
+        <div class="benefit-icon">⏰</div>
+        <p class="benefit-title">Zero Staff Overhead</p>
+        <p class="benefit-desc">No one needs to manage queues, collect cash, or troubleshoot print jobs. The platform is fully automated end-to-end.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">📊</div>
+        <p class="benefit-title">Complete Financial Visibility</p>
+        <p class="benefit-desc">Every transaction is logged, timestamped, and included in your monthly invoice. Instant audit trail for finance and compliance teams.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">🔒</div>
+        <p class="benefit-title">Verified Identity Printing</p>
+        <p class="benefit-desc">Institute Pay uses OTP-based authentication against institutional IDs — ensuring only eligible, verified members can charge to the account.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">🏗️</div>
+        <p class="benefit-title">Flexible Infrastructure</p>
+        <p class="benefit-desc">Bring your own hardware, or let us supply it. Enable any combination of features on any subset of printers on your campus.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">💳</div>
+        <p class="benefit-title">Multiple Payment Modes</p>
+        <p class="benefit-desc">Every printer supports Razorpay (UPI, card, netbanking). Institute Pay-enabled printers additionally support charge-to-account for institutional members.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">📈</div>
+        <p class="benefit-title">Revenue from Idle Assets</p>
+        <p class="benefit-desc">Your hardware generates value 24 hours a day, not just during office hours. Students can print at 2am — and you see the revenue.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <p class="eyebrow" style="color:var(--gold);">Get Started</p>
+    <h2>Ready to Modernise Your<br>Campus Print Infrastructure?</h2>
+    <p class="lead">We work with a small number of institutions at a time to ensure quality deployment. Reach out to discuss your campus requirements and receive a tailored proposal.</p>
+
+    <div class="cta-contact">
+      <label>Contact SecurePrint</label>
+      <a href="mailto:printeriitb@gmail.com">printeriitb@gmail.com</a>
+    </div>
+
+    <p style="margin-top:24px; font-size:13px; color:rgba(255,255,255,0.3); letter-spacing:0.04em;">printeriitb.shop &nbsp;·&nbsp; Governing jurisdiction: Jaipur, Rajasthan, India &nbsp;·&nbsp; © 2026 SecurePrint</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="brochure-footer">
+    <span>CONFIDENTIAL — FOR INSTITUTIONAL USE ONLY</span>
+    <strong>SecurePrint &nbsp;·&nbsp; printeriitb.shop</strong>
+    <span>© 2026 All rights reserved</span>
+  </div>
+
+</div>
+
+
+</body></html>
